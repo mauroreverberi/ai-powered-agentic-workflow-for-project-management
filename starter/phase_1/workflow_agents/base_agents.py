@@ -13,10 +13,8 @@ EMBEDDING_MODEL = "text-embedding-3-large"
 # helper function to create an OpenAI client and allow setting a custom base URL to support
 # vocareum and other environments
 def _create_client(openai_api_key):
-    base_url = os.getenv("OPENAI_BASE_URL")
-    if base_url:
-        return OpenAI(base_url=base_url, api_key=openai_api_key)
-    return OpenAI(api_key=openai_api_key)
+    base_url = os.getenv("OPENAI_BASE_URL", "https://openai.vocareum.com/v1")
+    return OpenAI(base_url=base_url, api_key=openai_api_key)
 
 # DirectPromptAgent class definition
 class DirectPromptAgent:
