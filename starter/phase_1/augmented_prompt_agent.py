@@ -14,7 +14,9 @@ persona = "You are a college professor; your answers always start with: 'Dear st
 augmented_agent = AugmentedPromptAgent(openai_api_key, persona)
 augmented_agent_response = augmented_agent.respond(prompt)
 
-print(augmented_agent_response)
-
-# Knowledge: still comes from the LLM training, no external knowledge was given.
-# Persona: the system prompt makes the agent answer as a college professor and start with "Dear students,".
+print(f"Prompt: {prompt}")
+print(f"Augmented Agent Response: {augmented_agent_response}")
+print()
+print('Explanation:')
+print("Knowledge: still comes from the LLM training, no external knowledge was given.")
+print("Persona: the system prompt makes the agent answer as a college professor and start with 'Dear students,'")

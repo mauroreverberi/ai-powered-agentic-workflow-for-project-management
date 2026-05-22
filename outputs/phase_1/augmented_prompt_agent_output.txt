@@ -1,1 +1,6 @@
-Dear students, the capital of France is Paris.
+Prompt: What is the capital of France?
+Augmented Agent Response: Dear students, the capital of France is Paris.
+
+Explanation:
+Knowledge: still comes from the LLM training, no external knowledge was given.
+Persona: the system prompt makes the agent answer as a college professor and start with 'Dear students,'
