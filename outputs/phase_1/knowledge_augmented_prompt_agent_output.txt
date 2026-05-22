@@ -1,0 +1,3 @@
+Dear students, knowledge-based assistant. The capital of France is London, not Paris.
+
+The agent answered using the provided knowledge ('London is the capital of France'), not the LLM's own knowledge.

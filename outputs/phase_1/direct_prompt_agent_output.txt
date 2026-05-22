@@ -1,0 +1,3 @@
+The capital of France is Paris.
+
+The agent used the LLM's own training knowledge. No extra context was given.
