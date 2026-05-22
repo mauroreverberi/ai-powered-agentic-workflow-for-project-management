@@ -69,6 +69,8 @@ knowledge_program_manager = (
     "Description: A brief explanation of what the feature does and its purpose\n"
     "Key Functionality: The specific capabilities or actions the feature provides\n"
     "User Benefit: How this feature creates value for the user\n\n"
+    "Start each feature directly with 'Feature Name:'. "
+    "Do not add 'Feature 1:', 'Feature 2:' or any numbering header.\n\n"
     "Only create product features. Do not create user stories or engineering tasks.\n\n"
     f"Product specification:\n{product_spec}"
 )
@@ -87,7 +89,9 @@ evaluation_criteria_program_manager = (
     "Feature Name: A clear, concise title that identifies the capability\n"
     "Description: A brief explanation of what the feature does and its purpose\n"
     "Key Functionality: The specific capabilities or actions the feature provides\n"
-    "User Benefit: How this feature creates value for the user"
+    "User Benefit: How this feature creates value for the user\n"
+    "Each feature must start directly with 'Feature Name:'. "
+    "Reject answers that use 'Feature 1:', 'Feature 2:' or numbered prefix headers."
 )
 program_manager_evaluation_agent = EvaluationAgent(
     openai_api_key,
